@@ -2,7 +2,7 @@
 # R code for generating a stationary MGWI trajectory
 #---------------------------------------------------
 
-# Generating count responses based on stationary MGWI processes
+# Generating count responses based on a stationary MGWI process
 
 # Instructions
 
