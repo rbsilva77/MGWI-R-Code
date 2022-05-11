@@ -10,6 +10,16 @@
 
 # Set the sample size n
 
+#---------------------------------------------------------------------------------------------------------------------
+# Obs. For the non-stationary case, we consider trend and seasonal covariates in the regression structure as follows:
+
+# mu_t = exp(beta_0 + beta_1 * t / n + beta_2 * cos(2 * pi * t / 12)) and alpha_t = exp(gamma_0 + gamma_1 * t / n), 
+# for t = 1, ..., n.
+
+# The above setup aims to mimic realistic situations when dealing with epidemic diseases, for example. 
+# It can be edited as long as the rest of the code is accordingly adapted.
+#---------------------------------------------------------------------------------------------------------------------
+
   r.mgwi_nst <- function(size, par){
     
     n <- size; b0 <- par[1]; b1 <- par[2]; b2 <- par[3]; g0 <- par[4]; g1<- par[5] 
